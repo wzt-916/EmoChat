@@ -1,45 +1,53 @@
-# 迅聊
+# EmoChat 
 
-一款基于Qt的网络聊天室，高仿WeChat。
+<h1 align="center">
+  <strong>基于人工智能的情感疏导与风险评估聊天软件设计与实现</strong>
+</h1>
+这是我的毕设项目，旨在设置一款聊天软件，具备基础功能外，还设置了情感分析、心理健康预警的功能，同时引入聊天机器人，来达到提前预警、及时发现的目的。文档将完整记录开发过程。
 
-采用QT6制作客户端，Linux C++实现后端。为用户提供了一个即时聊天平台。
+## 代码管理
 
-## 登录页面
+### github
 
-![login](image/login.png)
+#### 下载git
 
-## 注册页面
+```
+sudo apt-get install git
+```
 
-![register](image/register.png)
+#### 初始化
 
-## 用户聊天页面
+在emochat文件夹里运行
 
-![user_chat](image/user_chat.png)
+```
+git init
+```
 
-## 群聊页面
+#### 添加文件
 
-![group_chat](image/group_chat.png)
+在文件夹里我有一个emochat.md文件，现在将文件添加到仓库里
 
-## 好友申请
+```plain
+git add emochat.md
+```
 
-![friend_request1](image/friend_request1.png)
+#### 提交仓库
 
-![friend_request2](image/friend_request2.png)
+将添加的新文件修改文件提交到仓库里
 
-## 群聊申请
+```plain
+git commit -m "初始化"
+```
 
-![group_request1](image/group_request1.png)
+-m可以给提交起个名字，方便管理
 
-![group_request2](image/group_request2.png)
+#### 上传仓库
 
-## 选择头像
+#### 添加远程库
 
-![select_avatar](image/select_avatar.png)
+## 服务器
 
-## 发送表情
+## 客户端
 
-![send_expression](image/send_expression.png)
 
-## 图片预览
 
-![image_preview](image/image_preview.png)
