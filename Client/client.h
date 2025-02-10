@@ -13,6 +13,7 @@
 #include "chatlistwidget.h"
 #include "systemmessage.h"
 #include "emojiselector.h"
+#include "robotchat.h"
 #include <QSplitter>
 
 extern bool friendWidgetOn;
@@ -66,6 +67,8 @@ private slots:
 
     void on_pushButton_system_msg_clicked();
 
+    void on_pushButton_robot_clicked();
+
     void on_pushButton_icon_clicked();
 
     void on_pushButton_emoj_clicked();
@@ -115,6 +118,7 @@ private:
 
 
     SystemMessage *systemMsg;
+    RobotChat *robotMsg;
     QDateTime currentDateTime;
     TcpClient* t;
 

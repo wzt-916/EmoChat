@@ -483,6 +483,9 @@ background-color:transparent;</string>
           <height>41</height>
          </rect>
         </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="styleSheet">
          <string notr="true">QPushButton {
 
@@ -513,7 +516,7 @@ background-color:transparent;</string>
          <x>78</x>
          <y>10</y>
          <width>202</width>
-         <height>94</height>
+         <height>81</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_2">
@@ -665,6 +668,19 @@ QPushButton:pressed {
            <property name="spacing">
             <number>0</number>
            </property>
+           <item row="0" column="1">
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
            <item row="0" column="2">
             <widget class="QPushButton" name="pushBtn_send">
              <property name="minimumSize">
@@ -711,19 +727,6 @@ QPushButton:pressed {
               <string>发送</string>
              </property>
             </widget>
-           </item>
-           <item row="0" column="1">
-            <spacer name="horizontalSpacer">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
            </item>
           </layout>
          </widget>

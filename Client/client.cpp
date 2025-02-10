@@ -18,6 +18,7 @@
 #include "selfinfowidget.h"
 #include "verificationitem.h"
 #include "IconSetting/iconselect.h"
+#include "robotchat.h"
 
 
 Client::Client(SelfInfo info ,TcpClient* tcp,QWidget *parent)
@@ -27,6 +28,7 @@ Client::Client(SelfInfo info ,TcpClient* tcp,QWidget *parent)
     InitUI();
     InitLayout();
     systemMsg = new SystemMessage();
+    robotMsg = new RobotChat();
     ui->label_icon->SetIcon(info.icon);
     messagesListWidget = new ChatListWidget(ItemType_Message);
     friendsListWidget = new ChatListWidget(ItemType_Friend);
@@ -707,6 +709,12 @@ void Client::on_pushButton_system_msg_clicked()
 {
     if(systemMsg->isHidden())
         systemMsg->show();
+}
+
+void Client::on_pushButton_robot_clicked()
+{
+    if(robotMsg->isHidden())
+        robotMsg->show();
 }
 
 void Client::on_pushButton_icon_clicked()

@@ -5,49 +5,21 @@
 </h1>
 这是我的毕设项目，旨在设置一款聊天软件，具备基础功能外，还设置了情感分析、心理健康预警的功能，同时引入聊天机器人，来达到提前预警、及时发现的目的。文档将完整记录开发过程。
 
-## 代码管理
-
-### github
-
-#### 下载git
-
-```
-sudo apt-get install git
-```
-
-#### 初始化
-
-在emochat文件夹里运行
-
-```
-git init
-```
-
-#### 添加文件
-
-在文件夹里我有一个emochat.md文件，现在将文件添加到仓库里
-
-```plain
-git add emochat.md
-```
-
-#### 提交仓库
-
-将添加的新文件修改文件提交到仓库里
-
-```plain
-git commit -m "初始化"
-```
-
--m可以给提交起个名字，方便管理
-
-#### 上传仓库
-
-#### 添加远程库
-
 ## 服务器
 
 ## 客户端
 
+## deepseek大模型本地部署
 
+#### 下载安装ollama
+
+```
+curl -fssL https://ollama.com/install.sh l sh
+```
+
+#### 下载7b模型
+
+```
+ollama run deepseek-r1:7b
+```
 

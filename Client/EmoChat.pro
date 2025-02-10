@@ -26,6 +26,7 @@ FORMS += \
     client.ui \
     friendinfowidget.ui \
     logging.ui \
+    robotchat.ui \
     selfinfowidget.ui
 
 HEADERS += \
@@ -46,6 +47,7 @@ HEADERS += \
     client.h \
     friendinfowidget.h \
     logging.h \
+    robotchat.h \
     selfinfowidget.h
 
 SOURCES += \
@@ -67,6 +69,7 @@ SOURCES += \
     client.cpp \
     logging.cpp \
     main.cpp \
+    robotchat.cpp \
     selfinfowidget.cpp
 
 # Default rules for deployment.
