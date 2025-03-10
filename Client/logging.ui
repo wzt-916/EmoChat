@@ -41,20 +41,11 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>20</x>
       <y>10</y>
       <width>511</width>
       <height>401</height>
      </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true"/>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -183,7 +174,7 @@ QLineEdit:focus {
 }</string>
       </property>
       <property name="text">
-       <string>123</string>
+       <string>10001</string>
       </property>
       <property name="maxLength">
        <number>16</number>
@@ -295,7 +286,7 @@ QPushButton::hover {
        <string notr="true">color: rgb(166,166,166);</string>
       </property>
       <property name="text">
-       <string>EmoChat</string>
+       <string>OurChat</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_seePassword">
@@ -341,10 +332,7 @@ QPushButton::hover {
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="src.qrc">:/pic/src/emochat.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
+       <pixmap resource="src.qrc">:/pic/src/wechat2.png</pixmap>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_login">
@@ -367,8 +355,8 @@ QPushButton::hover {
 	
 	color: rgb(255, 255, 255);
 	border-style: solid;
-	border-radius: 6px;	
-	background-color: rgb(108, 117, 245);
+	border-radius: 5px;	
+	background-color: rgb(7,193,96);
 }
 
 QPushButton:hover{
@@ -381,17 +369,6 @@ QPushButton:pressed {
       </property>
       <property name="text">
        <string>登录</string>
-      </property>
-      <property name="icon">
-       <iconset>
-        <disabledoff>:/icon/src/icon1.ico</disabledoff>
-       </iconset>
-      </property>
-      <property name="iconSize">
-       <size>
-        <width>20</width>
-        <height>20</height>
-       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="pushbtn_regist">
@@ -410,20 +387,12 @@ QPushButton:pressed {
        <string>注册</string>
       </property>
       <property name="styleSheet">
-       <string notr="true">QPushButton{
-	
-	color: rgb(255, 255, 255);
-	border-style: solid;
-	border-radius: 6px;	
-	background-color: rgb(108, 117, 245);
+       <string notr="true">QPushButton {
+	color: rgb(166,166,166);
+	border-style: none;
 }
-
-QPushButton:hover{
-	background-color: rgb(56,205,127);
-}
-
-QPushButton:pressed {
-	background-color: rgb(7,193,96);
+QPushButton::hover {
+	color: rgb(67,129,202);
 }</string>
       </property>
       <property name="text">
@@ -697,26 +666,6 @@ QLineEdit:focus {
         <height>24</height>
        </rect>
       </property>
-      <property name="autoFillBackground">
-       <bool>false</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton{
-	
-	color: rgb(255, 255, 255);
-	border-style: solid;
-	border-radius: 6px;	
-	background-color: rgb(108, 117, 245);
-}
-
-QPushButton:hover{
-	background-color: rgb(56,205,127);
-}
-
-QPushButton:pressed {
-	background-color: rgb(7,193,96);
-}</string>
-      </property>
       <property name="text">
        <string>注册</string>
       </property>
@@ -729,23 +678,6 @@ QPushButton:pressed {
         <width>84</width>
         <height>24</height>
        </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton{
-	
-	color: rgb(255, 255, 255);
-	border-style: solid;
-	border-radius: 6px;	
-	background-color: rgb(108, 117, 245);
-}
-
-QPushButton:hover{
-	background-color: rgb(56,205,127);
-}
-
-QPushButton:pressed {
-	background-color: rgb(7,193,96);
-}</string>
       </property>
       <property name="text">
        <string>返回</string>
@@ -770,7 +702,7 @@ QPushButton:pressed {
        <string notr="true">color: rgb(166,166,166);</string>
       </property>
       <property name="text">
-       <string>EmoChat</string>
+       <string>OurChat</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushBtn_close_2">
@@ -858,10 +790,7 @@ QPushButton::hover {
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="src.qrc">:/pic/src/emochat.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
+       <pixmap resource="src.qrc">:/pic/src/wechat2.png</pixmap>
       </property>
      </widget>
     </widget>

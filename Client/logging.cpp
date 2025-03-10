@@ -33,7 +33,7 @@ Logging::~Logging()
 
 void Logging::Init()
 {
-    this->setWindowTitle("EmoChat 登录");
+    this->setWindowTitle("WeChat 登录");
     setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint); // 最小化按钮
     setWindowFlags(windowFlags() | Qt::WindowContextHelpButtonHint); // 帮助按钮
 
@@ -42,9 +42,7 @@ void Logging::Init()
     ui->centerWidget->setGeometry(5,5,width,height);
     ui->centerWidget->setStyleSheet("QWidget{border-radius:4px;background:rgba(255,255,255,1);}");  //设置圆角
 
-    this->setWindowFlags(Qt::FramelessWindowHint );          //去掉标题栏无边框
-    this->setWindowIcon(QIcon("icon.ico"));
-    //this->setWindowIcon(QIcon("src/icon/src/emochat.ico"));
+    this->setWindowFlags(Qt::FramelessWindowHint);          //去掉标题栏无边框
     this->setAttribute(Qt::WA_TranslucentBackground,true);
     //实例阴影shadow
     QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect(this);

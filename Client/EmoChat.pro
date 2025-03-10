@@ -26,7 +26,6 @@ FORMS += \
     client.ui \
     friendinfowidget.ui \
     logging.ui \
-    robotchat.ui \
     selfinfowidget.ui
 
 HEADERS += \
@@ -47,7 +46,6 @@ HEADERS += \
     client.h \
     friendinfowidget.h \
     logging.h \
-    robotchat.h \
     selfinfowidget.h
 
 SOURCES += \
@@ -69,7 +67,6 @@ SOURCES += \
     client.cpp \
     logging.cpp \
     main.cpp \
-    robotchat.cpp \
     selfinfowidget.cpp
 
 # Default rules for deployment.
@@ -77,12 +74,13 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
+DISTFILES += \
+    wechat.ico icon.ico
 RESOURCES += \
     src.qrc
 
 INCLUDEPATH += "$${PWD}/Adding" "$${PWD}/Chatting" "$${PWD}/IconSetting" "$${PWD}/Tools" "$${PWD}/Rewriting"
 
 #LIBS += $$PWD/libs/libeay32.dll
-
 
 

@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="../src.qrc">
-    <normaloff>:/pic/src/emochat.png</normaloff>:/pic/src/emochat.png</iconset>
+    <normaloff>:/Icons/src/weichat.png</normaloff>:/Icons/src/weichat.png</iconset>
   </property>
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
@@ -27,7 +27,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>1</number>
+    <number>0</number>
    </property>
    <widget class="QWidget" name="tab_friend">
     <attribute name="title">

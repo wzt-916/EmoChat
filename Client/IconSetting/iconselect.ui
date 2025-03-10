@@ -13,10 +13,6 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <property name="windowIcon">
-   <iconset resource="../src.qrc">
-    <normaloff>:/icon/src/emochat.ico</normaloff>:/icon/src/emochat.ico</iconset>
-  </property>
   <widget class="QListWidget" name="listWidget">
    <property name="geometry">
     <rect>
@@ -92,8 +88,6 @@
    </property>
   </widget>
  </widget>
- <resources>
-  <include location="../src.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
