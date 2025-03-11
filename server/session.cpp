@@ -114,13 +114,26 @@ int Session::handleMsg(json msg)
         case cmd_friend_chat:       //好友聊天
         {
             int account = msg.at("account");
-            int fd = getFriendFd(account);
-            if(fd > 0)
+            //如果是跟机器人聊天
+            int a = 518;
+            if(account == 518)
             {
+                int my_account = msg.at("sender");
+                int fd = getFriendFd(my_account);
+                msg["account"] = my_account;
+                msg["sender"] = 518;
+                msg["content"] = "hello";
                 sendMsg(fd,msg);
             }
             else{
-                //not online
+                int fd = getFriendFd(account);
+                if(fd > 0)
+                {
+                    sendMsg(fd,msg);
+                }
+                else{
+                    //not online
+                }
             }
             break;
         }

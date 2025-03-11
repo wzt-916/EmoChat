@@ -24,7 +24,6 @@
         <file>src/tianjia2.png</file>
         <file>src/top.png</file>
         <file>src/wechat.png</file>
-        <file>src/wechat2.png</file>
         <file>src/wechat3.png</file>
         <file>src/WeCloudIcon.png</file>
         <file>src/weichat.png</file>
@@ -35,6 +34,9 @@
         <file>src/eyes_open.png</file>
         <file>src/image.png</file>
         <file>src/image1.png</file>
+        <file>src/wechat2.png</file>
+        <file>src/robot.png</file>
+        <file>src/beijing.png</file>
     </qresource>
     <qresource prefix="/">
         <file>src/friendItemBg.png</file>

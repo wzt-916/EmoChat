@@ -38,14 +38,23 @@
      <height>1000</height>
     </size>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>511</width>
-      <height>401</height>
+      <x>0</x>
+      <y>0</y>
+      <width>581</width>
+      <height>431</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
     </property>
     <property name="currentIndex">
      <number>0</number>
@@ -99,7 +108,7 @@
      <widget class="QPushButton" name="pushBtn_close">
       <property name="geometry">
        <rect>
-        <x>450</x>
+        <x>510</x>
         <y>0</y>
         <width>34</width>
         <height>40</height>
@@ -116,7 +125,8 @@
 }
 QPushButton::hover {
 	background-color: #f57575; 
-}</string>
+}
+background-color: rgba(255, 255, 255, 0);</string>
       </property>
       <property name="text">
        <string/>
@@ -171,10 +181,11 @@ QPushButton::hover {
 }
 QLineEdit:focus {
     border: 2px solid #3498db;
-}</string>
+}
+background-color: rgba(255, 255, 255, 0);</string>
       </property>
       <property name="text">
-       <string>10001</string>
+       <string/>
       </property>
       <property name="maxLength">
        <number>16</number>
@@ -222,7 +233,7 @@ QLineEdit:focus {
 }</string>
       </property>
       <property name="text">
-       <string>123</string>
+       <string/>
       </property>
       <property name="maxLength">
        <number>32</number>
@@ -234,7 +245,7 @@ QLineEdit:focus {
      <widget class="QPushButton" name="pushBtn_hide">
       <property name="geometry">
        <rect>
-        <x>410</x>
+        <x>460</x>
         <y>0</y>
         <width>34</width>
         <height>40</height>
@@ -286,7 +297,7 @@ QPushButton::hover {
        <string notr="true">color: rgb(166,166,166);</string>
       </property>
       <property name="text">
-       <string>OurChat</string>
+       <string>EmoChat</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_seePassword">
@@ -323,16 +334,25 @@ QPushButton::hover {
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>10</y>
-        <width>40</width>
-        <height>40</height>
+        <y>9</y>
+        <width>41</width>
+        <height>41</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="pixmap">
        <pixmap resource="src.qrc">:/pic/src/wechat2.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_login">
@@ -702,7 +722,7 @@ QLineEdit:focus {
        <string notr="true">color: rgb(166,166,166);</string>
       </property>
       <property name="text">
-       <string>OurChat</string>
+       <string>EmoChat</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushBtn_close_2">
@@ -791,6 +811,9 @@ QPushButton::hover {
       </property>
       <property name="pixmap">
        <pixmap resource="src.qrc">:/pic/src/wechat2.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
       </property>
      </widget>
     </widget>

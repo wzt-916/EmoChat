@@ -215,12 +215,12 @@ QPushButton:pressed {
          <string notr="true">QPushButton {
 
 	border: none; /* no border for a flat push button */
-	image: url(:/src/SelfCenter1.png); 
+	image: url(:/pic/src/robot.png); 
 	max-width:40;
 	min-width:40;
 }
 QPushButton::hover {
-	image: url(:/src/SelfCenter2.png); 
+	image: url(:/pic/src/robot.png); 
 }
 
 

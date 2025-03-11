@@ -21,6 +21,11 @@ void CommandHandler::Regist(int account, string password, string name, Session *
         Statement query1(db, "insert into friend values (10000,?)");
         query1.bind(1, account);
         query1.exec();
+
+        //添加机器人好友
+        Statement query2(db, "insert into friend values (518,?)");
+        query2.bind(1, account);
+        query2.exec();
     }
     else
     {

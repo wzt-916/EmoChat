@@ -19,6 +19,15 @@ int main(int argc,char* argv[])
 	db.exec("CREATE TABLE IF NOT EXISTS user (account INTEGER PRIMARY KEY AUTOINCREMENT, password VARCHAR(32), name VARCHAR(32), signature TEXT, online INT DEFAULT 0 NOT NULL, icon TEXT);");
 	db.exec("CREATE TABLE IF NOT EXISTS member (member_id INTEGER, group_account INTEGER, group_nickname TEXT);");
 
+    //创建机器人账号
+    Statement query(db, "insert into user values (518,'123','小爱同学','hello',1,':/Icons/src/QQIcon/icon.jpg')");
+    int res = query.exec();
+    if (res == 1)
+    {
+        Statement query1(db, "insert into friend values (10000,?)");
+        query1.bind(1, 9589);
+        query1.exec();
+    }
 
     int default_port = 8888;
     int optch = 0;
