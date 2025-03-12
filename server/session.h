@@ -3,6 +3,11 @@
 
 #include <stdio.h>
 #include "common.h"
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <nlohmann/json.hpp>
+#include <unistd.h> 
 
 
 class Session{

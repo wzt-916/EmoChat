@@ -24,10 +24,40 @@ Session::~Session()
     }
 };
 
+// 读取文件内容，清空文件，如果文件为空则等待10秒
+std::string readAndClearFile(const std::string& filename) {
+    std::string content;
+
+    for (int i = 0; i < 60; ++i) { // 轮询检查10次，每次间隔1秒
+        std::ifstream inFile(filename);
+
+        if (inFile.is_open()) {
+            // 读取文件内容
+            content.assign((std::istreambuf_iterator<char>(inFile)), std::istreambuf_iterator<char>());
+            inFile.close();
+
+            if (!content.empty()) {
+                // 清空文件
+                std::ofstream outFile(filename, std::ios::trunc);
+                outFile.close();
+                return content;
+            }
+        } else {
+            std::cerr << "无法打开文件: " << filename << std::endl;
+            return "无响应";
+        }
+
+        std::this_thread::sleep_for(std::chrono::seconds(1)); // 等待1秒
+    }
+
+    return "无响应"; // 10秒后仍未读取到内容
+}
+
 int Session::handleMsg(json msg)
 {
     usleep(1000);
     int cmd = msg.at("cmd");
+    int robot = 0;
     //LOGINFO("handleMsg command:%s\n", cmd.c_str());
     switch (cmd)
     {
@@ -122,7 +152,37 @@ int Session::handleMsg(json msg)
                 int fd = getFriendFd(my_account);
                 msg["account"] = my_account;
                 msg["sender"] = 518;
-                msg["content"] = "hello";
+                //string str = to_string(my_account) + ".txt";
+                string str = "../robot.txt";
+                // if(robot == 0)
+                // {
+                //     // // 创建一个输出文件流对象（仅创建文件，不写入任何内容）
+                //     // std::ofstream outfile(str);
+                //     // // 检查文件是否成功打开
+                //     // if (outfile.is_open()) {
+                //     //     std::cout << "空文件 已创建成功!" << std::endl;
+                //     // } else {
+                //     //     std::cerr << "无法创建文件!" << std::endl;
+                //     // }
+
+                //     //打开python运行脚本
+                //      // 使用 system() 调用 Python 脚本并传递字符串作为参数
+                //     std::string command = "python3 ../robot.py";
+                //     system(command.c_str());
+                //     robot = 1;
+                // }
+                std::ofstream outfile(str);
+                if (outfile.is_open()) {
+                    outfile << msg["content"];
+                    outfile.close();
+                    std::cout << "C++: 写入字符串到文件成功" << std::endl;
+                } else {
+                    std::cerr << "无法打开文件进行写入" << std::endl;
+                }
+                //获取AI回答
+                std::string filename = "../robotanswer.txt";
+                std::string result = readAndClearFile(filename);
+                msg["content"] = result;
                 sendMsg(fd,msg);
             }
             else{

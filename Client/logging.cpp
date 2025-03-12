@@ -33,7 +33,7 @@ Logging::~Logging()
 
 void Logging::Init()
 {
-    this->setWindowTitle("WeChat 登录");
+    this->setWindowTitle("EmoChat 登录");
     setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint); // 最小化按钮
     setWindowFlags(windowFlags() | Qt::WindowContextHelpButtonHint); // 帮助按钮
 
