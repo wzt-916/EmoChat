@@ -37,6 +37,8 @@
         <file>src/wechat2.png</file>
         <file>src/robot.png</file>
         <file>src/beijing.png</file>
+        <file>src/mylove.png</file>
+        <file>src/mylove2.png</file>
     </qresource>
     <qresource prefix="/">
         <file>src/friendItemBg.png</file>
@@ -77,8 +79,17 @@
         <file>src/QQIcon/icon18.jpg</file>
         <file>src/QQIcon/icon19.jpg</file>
         <file>src/QQIcon/icon.jpg</file>
-        <file>src/QQIcon/icon1.jpg</file>
         <file>src/QQIcon/icon2.jpg</file>
         <file>src/QQIcon/icon20.jpg</file>
+        <file>src/QQIcon/qunliao1.png</file>
+        <file>src/QQIcon/qunliao2.png</file>
+        <file>src/QQIcon/qunliao3.png</file>
+        <file>src/QQIcon/qunliao4.png</file>
+        <file>src/QQIcon/qunliao5.jpg</file>
+        <file>src/QQIcon/qunliao6.jpg</file>
+        <file>src/QQIcon/qunliao7.png</file>
+        <file>src/QQIcon/qunliao8.jpg</file>
+        <file>src/QQIcon/qunliao9.jpg</file>
+        <file>src/QQIcon/qunliao10.png</file>
     </qresource>
 </RCC>

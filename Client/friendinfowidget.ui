@@ -23,7 +23,7 @@
     <rect>
      <x>10</x>
      <y>50</y>
-     <width>111</width>
+     <width>121</width>
      <height>41</height>
     </rect>
    </property>
@@ -39,7 +39,7 @@
     <string notr="true">color:#ffffff;</string>
    </property>
    <property name="text">
-    <string>name</string>
+    <string>名字</string>
    </property>
    <property name="textFormat">
     <enum>Qt::MarkdownText</enum>
@@ -82,8 +82,8 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
-     <width>121</width>
+     <y>0</y>
+     <width>201</width>
      <height>41</height>
     </rect>
    </property>
@@ -99,7 +99,7 @@
     <string notr="true">color:#ffffff;</string>
    </property>
    <property name="text">
-    <string>account</string>
+    <string>账号：</string>
    </property>
    <property name="textInteractionFlags">
     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByMouse</set>
@@ -126,7 +126,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>C:/Users/86178/Desktop/【哲风壁纸】好运发生-福.png</pixmap>
+    <pixmap resource="src.qrc">:/pic/src/mylove2.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -140,6 +140,8 @@
   <zorder>textEdit_sig</zorder>
   <zorder>label_account</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
  <connections/>
 </ui>

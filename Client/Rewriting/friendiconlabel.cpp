@@ -1,7 +1,9 @@
 #include "friendiconlabel.h"
 #include "stringtool.h"
 #include <QDebug>
+#include <QRandomGenerator>
 
+int i = 0;
 FriendIconLabel::FriendIconLabel(QWidget *parent) : QLabel(parent)
 {
 }
@@ -49,7 +51,29 @@ void FriendIconLabel::SetIcon(QString url)
     }
     else
     {
-        setStyleSheet("border-image: url(:/Icons/src/QQIcon/icon1.jpg)");
+        QStringList iconList = {
+            ":/Icons/src/QQIcon/qunliao1.png",
+            ":/Icons/src/QQIcon/qunliao2.png",
+            ":/Icons/src/QQIcon/qunliao3.png",
+            ":/Icons/src/QQIcon/qunliao4.png",
+            ":/Icons/src/QQIcon/qunliao5.jpg",
+            ":/Icons/src/QQIcon/qunliao6.jpg",
+            ":/Icons/src/QQIcon/qunliao7.png",
+            ":/Icons/src/QQIcon/qunliao8.jpg",
+            ":/Icons/src/QQIcon/qunliao9.jpg",
+            ":/Icons/src/QQIcon/qunliao10.png"
+        };
+        if(i >= 10)
+        {
+            setStyleSheet("border-image: url(:/Icons/src/QQIcon/qunliao1.png)");
+            i = 1;
+        }
+        else
+        {
+            setStyleSheet("border-image: url(" + iconList[i++] + ");");
+        }
+        qDebug() << "i:" << i;
+        //setStyleSheet("border-image: url(:/Icons/src/QQIcon/icon2.jpg)");
     }
 }
 /*
